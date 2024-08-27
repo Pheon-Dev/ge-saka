@@ -141,7 +141,7 @@ const PortfolioPage = () => {
                   </h1>
                   <ul>
                     {item.desc.map((desc) => (
-                      <li>
+                      <li key={desc}>
                         <h5 className="text-lg font-bold md:text-4md lg:text-6md xl:text-8md">
                           {desc}
                         </h5>
