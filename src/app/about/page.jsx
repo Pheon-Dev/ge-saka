@@ -32,7 +32,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/wow.jpg"
               alt=""
               width={112}
               height={112}
@@ -99,7 +99,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              SKILLS
+              PROJECTS
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
@@ -107,132 +107,78 @@ const AboutPage = () => {
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Programming Languages
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    Python
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Data Manipulation and Analysis
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    - Data Wrangling
-                    - Pandas (Advanced)
-                    - SQL
-                    - Exploratory Data Analysis (EDA)
-                    - Data Cleaning
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
-                  </div>
-                </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    3. **Machine Learning**:
-                    - Supervised Learning (e.g., regression, classification)
-                    - Unsupervised Learning (e.g., clustering, dimensionality reduction)
-                    - Advanced Machine Learning (e.g., Random Forests, SVMs, Neural Networks)
-                    - Natural Language Processing (NLP)
-                    - Time Series Analysis
-                    -Image Classification
-                    -Recommender systems
-                    - Model Evaluation
-                    4. **Data Visualization**:
-                    - Matplotlib
-                    - Seaborn
-                    - Advanced Visualization (Plotly)
-                    - Dashboard Creation (Power BI, Tableau)
-                    5. **Statistical Analysis**:
-                    - Descriptive Statistics
-                    - Inferential Statistics
-                    - Probability and Statistics
-                    - A/B Testing
-                    - Bayesian Methods
-                    6. **Big Data and Cloud Computing**:
-                    - Hadoop/Spark (Introduction)
-                    - AWS (Cloud Computing)
-                    - Docker
-                    -Streamlit
-                    7. **Model Deployment**:
-                    - Flask
-                    - Django
-                    - Deploying Models as APIs or web applications
-                    8. **Project Management and Development**:
-                    - End-to-End Project Development
-                    - Agile Methodologies (Scrum, Kanban)
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
+              <ul className="flex flex-col gap-12 justify-center pb-48 list-none hover:list-disc">
+                <li className="flex justify-between h-8">
+                  <h6>
+                    Intelligent Job Matching Recommender and Application Trend Predictor
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
+                  <h6>
+                    NLP-Toxic Language Detector
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Predicting Pneumonia-Hospital Mortality
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Tomato Disease Detector
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Movie Recommender System
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Microsoft Movie studio Analysis
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Customer Banking Churn
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Stroke Data Analysis
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Population vs World-cup Analysis
+                  </h6>
+                </li>
+                <li className="flex justify-between h-8">
+                  <h6>Ames Housing Analysis and Modelling a Housing Predictive Model</h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Front-end design of Wavmasecurity.co.ke
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Padini General Supplies Invoice
+                  </h6>
+                </li>
+                <li className="flex justify-between h-1">
+                  <h6>
+                    Wera Android Application,linking property owners and casual workers.
+                  </h6>
+                </li>
+
+              </ul>
+              <div className="w-1/3 "></div>
             </motion.div>
           </div>
           {/* SOFT SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-            {/* SKILL TITLE */}
-            <motion.h1
+            {/* <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
@@ -240,7 +186,6 @@ const AboutPage = () => {
             >
               SOFT SKILLS
             </motion.h1>
-            {/* SKILL LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -265,7 +210,6 @@ const AboutPage = () => {
                 Job Readiness (Resume Building, Interview Preparation)
               </div>
             </motion.div>
-            {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -287,7 +231,7 @@ const AboutPage = () => {
                 stroke="#000000"
                 strokeWidth="1"
               ></path>
-            </motion.svg>
+            </motion.svg> */}
           </div>
         </div>
         {/* SVG CONTAINER */}

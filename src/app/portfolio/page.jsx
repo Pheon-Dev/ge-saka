@@ -3,7 +3,19 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-
+/* Intelligent Job Matching Recommender and Application Trend Predictor
+-NLP-Toxic Language Detector
+-Predicting Pneumonia-Hospital Mortality
+-Tomato Disease Detector
+-Movie Recommender System
+-Microsoft Movie studio Analysis
+-Customer Banking Churn
+-Stroke Data Analysis
+-Population vs World-cup Analysis
+-Ames Housing Analysis and Modelling a Housing Predictive Model
+-Front-end design of Wavmasecurity.co.ke
+-Padini General Supplies Invoice
+-Wera Android Application,linking property owners and casual workers. */
 const items = [
   {
     id: 1,
