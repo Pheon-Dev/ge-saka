@@ -3,51 +3,110 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-/* Intelligent Job Matching Recommender and Application Trend Predictor
--NLP-Toxic Language Detector
--Predicting Pneumonia-Hospital Mortality
--Tomato Disease Detector
--Movie Recommender System
--Microsoft Movie studio Analysis
--Customer Banking Churn
--Stroke Data Analysis
--Population vs World-cup Analysis
--Ames Housing Analysis and Modelling a Housing Predictive Model
--Front-end design of Wavmasecurity.co.ke
--Padini General Supplies Invoice
--Wera Android Application,linking property owners and casual workers. */
 const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Programming Languages",
+    desc: [
+      "Python",
+    ],
+    img: "",
+    link: "",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Data Manipulation and Analysis",
+    desc: [
+      "Data Wrangling",
+      "Pandas (Advanced)",
+      "SQL",
+      "Exploratory Data Analysis (EDA)",
+      "Data Cleaning",
+    ],
+    img: "",
+    link: "",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Machine Learning",
+    desc: [
+      "Supervised Learning (e.g., regression, classification)",
+      "Unsupervised Learning (e.g., clustering, dimensionality reduction)",
+      "Advanced Machine Learning (e.g., Random Forests, SVMs, Neural Networks)",
+      "Natural Language Processing (NLP)",
+      "Time Series Analysis",
+      "Image Classification",
+      "Recommender systems",
+      "Model Evaluation",
+    ],
+    img: "",
+    link: "",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    title: "Data Visualization",
+    desc: [
+      "Matplotlib",
+      "Seaborn",
+      "Advanced Visualization (Plotly)",
+      "Dashboard Creation (Power BI, Tableau)",
+    ],
+    img: "",
+    link: "",
+  },
+  {
+    id: 5,
+    color: "from-red-300 to-blue-300",
+    title: "Statistical Analysis",
+    desc: [
+      "Descriptive Statistics",
+      "Inferential Statistics",
+      "Probability and Statistics",
+      "A/B Testing",
+      "Bayesian Methods",
+    ],
+    img: "",
+    link: "",
+  },
+  {
+    id: 6,
+    color: "from-blue-300 to-violet-300",
+    title: "Big Data and Cloud Computing",
+    desc: [
+      "Hadoop/Spark (Introduction)",
+      "AWS (Cloud Computing)",
+      "Docker",
+      "Streamlit",
+    ],
+    img: "",
+    link: "",
+  },
+  {
+    id: 7,
+    color: "from-violet-300 to-purple-300",
+    title: "Model Deployment",
+    desc: [
+      "Flask",
+      "Django",
+      "Deploying Models as APIs or web applications",
+    ],
+    img: "",
+    link: "",
+  },
+  {
+    id: 8,
+    color: "from-purple-300 to-red-300",
+    title: "Project Management and Development",
+    desc: [
+      "End-to-End Project Development",
+      "Agile Methodologies (Scrum, Kanban)",
+    ],
+    img: "",
+    link: "",
   },
 ];
 
@@ -66,7 +125,7 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-          My Works
+          My Skills
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
@@ -77,25 +136,25 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                  <h1 className="text-md font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
-                  </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                    {item.desc}
-                  </p>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
-                  </Link>
+                  <ul>
+                    {item.desc.map((desc) => (
+                      <li>
+                        <h5 className="text-lg font-bold md:text-4md lg:text-6md xl:text-8md">
+                          {desc}
+                        </h5>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      {/* <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
@@ -123,7 +182,7 @@ const PortfolioPage = () => {
             Hire Me
           </Link>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
