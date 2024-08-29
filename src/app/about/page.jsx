@@ -41,6 +41,16 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
+            <p>Data Scientist with over 2 years of work experience and a background in Computer
+              Science. Proficient in data analysis and engineering, scientific computing,
+              quantitative methods, and machine learning. Key projects include developing a Job
+              Matching System and Trend Insights, conducting Sentiment Analysis, and creating a
+              Mortality Risk Prediction model for pneumonia. Additionally, worked on a Tomato
+              Plant Disease Detector, Banking Customer Retention Analysis, Stroke Risk Prediction
+              and Analysis, and Housing Market Value Prediction. Experienced in designing a
+              Security Website Front-End and analyzing data for Microsoft Movie Studio and a
+              Movie Recommender System. Strong skills in team collaboration, adaptability, time
+              management, and attention to detail.</p>
             <p className="text-lg">
               I am a passionate data scientist with a strong foundation in computer science,
               holding a degree from The Catholic University of Eastern Africa. My recent
@@ -108,70 +118,69 @@ const AboutPage = () => {
               className=""
             >
               <ul className="flex flex-col gap-12 justify-center pb-48 list-none hover:list-disc">
-                <li className="flex justify-between h-8">
+                <li className="flex justify-between h-2">
                   <h6>
-                    Intelligent Job Matching Recommender and Application Trend Predictor
+                    Job Matching System and Trend
+                    Insights
+
                   </h6>
                 </li>
                 <li className="flex justify-between h-2">
                   <h6>
-                    NLP-Toxic Language Detector
+                    Sentiment Analysis
+
                   </h6>
                 </li>
-                <li className="flex justify-between h-1">
+                <li className="flex justify-between h-2">
                   <h6>
-                    Predicting Pneumonia-Hospital Mortality
+                    Mortality Risk Prediction for
+                    Pneumonia
+
                   </h6>
                 </li>
-                <li className="flex justify-between h-1">
+                <li className="flex justify-between h-2">
                   <h6>
-                    Tomato Disease Detector
+                    Tomato Plant Disease Detector
+
                   </h6>
                 </li>
-                <li className="flex justify-between h-1">
+                <li className="flex justify-between h-2">
+                  <h6>
+                    Banking Customer Retention
+                    Analysis
+
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
+                  <h6>
+                    Stroke Risk Prediction and
+                    Analysis
+
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
+                  <h6>
+                    Housing Market Value Prediction
+
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
+                  <h6>
+                    Security Website Front-End Design
+
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
+                  <h6>
+                    Microsoft Movie Studio Analysis
+
+                  </h6>
+                </li>
+                <li className="flex justify-between h-2">
                   <h6>
                     Movie Recommender System
                   </h6>
                 </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Microsoft Movie studio Analysis
-                  </h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Customer Banking Churn
-                  </h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Stroke Data Analysis
-                  </h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Population vs World-cup Analysis
-                  </h6>
-                </li>
-                <li className="flex justify-between h-8">
-                  <h6>Ames Housing Analysis and Modelling a Housing Predictive Model</h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Front-end design of Wavmasecurity.co.ke
-                  </h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Padini General Supplies Invoice
-                  </h6>
-                </li>
-                <li className="flex justify-between h-1">
-                  <h6>
-                    Wera Android Application,linking property owners and casual workers.
-                  </h6>
-                </li>
-
               </ul>
               <div className="w-1/3 "></div>
             </motion.div>
