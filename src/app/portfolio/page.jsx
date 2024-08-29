@@ -108,6 +108,15 @@ const items = [
     img: "",
     link: "",
   },
+  {
+    id: 9,
+    color: "from-purple-300 to-red-300",
+    title: "",
+    desc: [
+    ],
+    img: "",
+    link: "",
+  },
 ];
 
 const PortfolioPage = () => {
